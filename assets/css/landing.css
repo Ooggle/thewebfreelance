@@ -3,6 +3,13 @@
     box-sizing: border-box;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
+.little-padding{
+    padding: 5px 20px;
+}
 
 
 /* HEADER */
