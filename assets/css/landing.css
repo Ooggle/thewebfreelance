@@ -11,15 +11,20 @@
     padding: 5px 20px;
 }
 
+a{
+    text-decoration: none;
+    color: initial;
+}
 
 /* HEADER */
 
 .full-header-handler{
     width: 100%;
-    background-color: #A8E6CF;
+    background-color: #c5ff8f;
 }
 
 .full-header-handler h1{
+    color: #47c92d;
     text-align: center;
     font-size: 60px;
     padding-top: 230px;
@@ -31,11 +36,12 @@
     top: 0;
     width: 50%;
     height: 65px;
-    margin: 0 auto;
+    padding: 0 5px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #A8E6CF;
+    background-color: rgb(189, 247, 135, 0.9);
 }
 
 .top-bar-text-left *{
