@@ -31,6 +31,10 @@ a{
     padding-bottom: 300px;
 }
 
+.landing-title{
+	text-shadow: 3px 3px 0px #41ba29;
+}
+
 .top-bar-text-handler{
 	position: fixed;
     top: 0;
