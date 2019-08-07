@@ -103,9 +103,9 @@ a{
 }
 
 .single-article{
-    margin: 45px auto;
+    margin: 0 auto;
     width: 700px;
-    padding: 25px;
+    padding: 0px 25px;
     display: flex;
     align-items: center;
     border-radius: 5px;
@@ -120,6 +120,24 @@ a{
 .single-article:hover h3{
     transition-duration: 0.2s;
     color: #c5611e;
+}
+
+.vertical_dotted_line{
+    border-left: 2px dotted #c5611e;
+    height: 200px;
+    width: 0px;
+    margin: 0 auto;
+}
+
+.short_vertical_dotted_line{
+    border-left: 2px dotted #c5611e;
+    height: 90px;
+    width: 0px;
+    margin: 0 auto;
+}
+
+.date-text{
+    text-align: center;
 }
 
 .article-text-part{
