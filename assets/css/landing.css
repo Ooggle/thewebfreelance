@@ -31,9 +31,16 @@ a{
     padding-bottom: 300px;
 }
 
-.top-bar-text{
-    position: sticky;
+.top-bar-text-handler{
+	position: fixed;
     top: 0;
+	z-index: 9999;
+	width: 100%;
+	background-color: rgb(189, 247, 135, 0.9);
+	transition: top 0.5s;
+}
+
+.top-bar-text{
     width: 50%;
     height: 65px;
     padding: 0 5px;
@@ -41,7 +48,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(189, 247, 135, 0.9);
+    border-radius: 3px;
 }
 
 .top-bar-text-left *{
@@ -58,6 +65,7 @@ a{
 }
 
 .icon-arrow{
+    color: #47c92d;
     font-size: 30px;
     text-align: center;
     padding-bottom: 10px;

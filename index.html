@@ -12,54 +12,83 @@
     <link rel="stylesheet" href="lib/icomoon/icomoon.css">
 </head>
 <body>
-    <div class="full-header-handler">
-        <div class="top-bar-text">
-            <div class="top-bar-text-left">
-                <a href="#"><p class="display-a">The Web Freelance</p></a>
-            </div>
-            <div class="top-bar-text-right">
-                <a href="portfolio.html"><p>PORTFOLIO</p></a>
-                <p>CONTACT</p>
-            </div>
-        </div>
-        <h1>Développeur Web Freelance</h1>
-        <p class="icon-arrow"><span onclick="start_transition()" class="pointer little-padding"><span class="icon-long-arrow-down"></span></span></p>
-    </div>
-    <div id="div-start" class="modulable-part">
-        <div class="modulable-part-left">
-            <div class="screen-modulable">
-                <div class="screen-modulable-header"></div>
-                <div class="screen-modulable-main"></div>
-                <div class="screen-modulable-nav"></div>
-            </div>
-        </div>
-        <div class="modulable-part-right">
-            <p class="modulable-part-right-title"><span class="icon-wrench"></span> Une interface<br>modulable</p>
-            <p class="modulable-part-right-subtitle">Adaptez votre site selon vos envies !</p>
-        </div>
-    </div>
-    <div class="responsive-part">
-        <div class="responsive-part-left">
-            <p class="responsive-part-left-title"><span class="icon-desktop"></span> <span class="icon-laptop"></span> <span class="icon-tablet"></span> <span class="icon-mobile"></span> Du contenu<br>responsive</p>
-            <p class="responsive-part-left-subtitle">Nous valorisons les sites adaptés aux mobiles !</p>
-        </div>
-        <div class="responsive-part-right">
-            <div class="screen-responsive">
-                <div class="screen-responsive-header"></div>
-                <div class="screen-responsive-main"></div>
-                <div class="screen-responsive-nav"></div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
+	<div class="top-bar-text-handler" id="top-bar-text-handler">
+		<div class="top-bar-text">
+			<div class="top-bar-text-left">
+				<a href="#"><p class="display-a">The Web Freelance</p></a>
+			</div>
+			<div class="top-bar-text-right">
+				<a href="portfolio.html"><p>PORTFOLIO</p></a>
+				<p>CONTACT</p>
+			</div>
+		</div>
+	</div>
+	<div id="luxy">
+		<div class="full-header-handler">
+			<h1>Développeur Web Freelance</h1>
+			<p class="icon-arrow"><span onclick="start_transition()" class="pointer little-padding"><span class="icon-long-arrow-down"></span></span></p>
+		</div>
+		<div id="div-start" class="modulable-part">
+			<div class="modulable-part-left">
+				<div class="screen-modulable">
+					<div class="screen-modulable-header"></div>
+					<div class="screen-modulable-main"></div>
+					<div class="screen-modulable-nav"></div>
+				</div>
+			</div>
+			<div class="modulable-part-right">
+				<p class="modulable-part-right-title"><span class="icon-wrench"></span> Une interface<br>modulable</p>
+				<p class="modulable-part-right-subtitle">Adaptez votre site selon vos envies !</p>
+			</div>
+		</div>
+		<div class="responsive-part">
+			<div class="responsive-part-left">
+				<p class="responsive-part-left-title"><span class="icon-desktop"></span> <span class="icon-laptop"></span> <span class="icon-tablet"></span> <span class="icon-mobile"></span> Du contenu<br>responsive</p>
+				<p class="responsive-part-left-subtitle">Nous valorisons les sites adaptés aux mobiles !</p>
+			</div>
+			<div class="responsive-part-right">
+				<div class="screen-responsive">
+					<div class="screen-responsive-header"></div>
+					<div class="screen-responsive-main"></div>
+					<div class="screen-responsive-nav"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
 
+		</div>
+		<!-- temp to make space at the end -->
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <!-- temp to make space at the end -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <script>
+	<script src="lib/luxy.js"></script>
+	<script>
         function start_transition() {
             document.getElementById("div-start").scrollIntoView({behavior: "smooth", inline: "nearest"});
         }
+		
+		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+		// set luxy start after the intro
+		if (!isMobile) {
+			luxy.init({
+				wrapper: '#luxy',
+				wrapperSpeed:  0.1
+			});
+		}
+		
+		/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("top-bar-text-handler").style.top = "0";
+			} else {
+				if(window.pageYOffset > 700) {
+					document.getElementById("top-bar-text-handler").style.top = "-65px";
+				}
+			}
+			prevScrollpos = currentScrollPos;
+		}
     </script>
 </body>
 </html>

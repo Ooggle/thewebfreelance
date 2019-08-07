@@ -12,32 +12,82 @@
     <link rel="stylesheet" href="lib/icomoon/icomoon.css">
 </head>
 <body>
-    <div class="full-header-handler">
-        <div class="top-bar-text">
-            <div class="top-bar-text-left">
-                <a href="./"><p class="display-a">The Web Freelance</p></a>
-            </div>
-            <div class="top-bar-text-right">
-                <a href="#"><p>PORTFOLIO</p></a>
-                <p>CONTACT</p>
-            </div>
-        </div>
-        <h1><span class="portfolio-title">Portfolio</span><br>
-        Certains des projets que j'ai fait et qui m'ont plu !</h1>
-        <p class="icon-arrow"><span onclick="start_transition()" class="pointer little-padding"><span class="icon-long-arrow-down"></span></span></p>
-    </div>
-    <div id="div-start">
+	<div class="top-bar-text-handler" id="top-bar-text-handler">
+		<div class="top-bar-text">
+			<div class="top-bar-text-left">
+				<a href="./"><p class="display-a">The Web Freelance</p></a>
+			</div>
+			<div class="top-bar-text-right">
+				<a href="#"><p>PORTFOLIO</p></a>
+				<p>CONTACT</p>
+			</div>
+		</div>
+	</div>
+	<div id="luxy">
+		<div class="full-header-handler">
+			<h1><span class="portfolio-title">Portfolio</span><br>
+			Certains des projets que j'ai fait et qui m'ont plu !</h1>
+			<p class="icon-arrow"><span onclick="start_transition()" class="pointer little-padding"><span class="icon-long-arrow-down"></span></span></p>
+		</div>
+		<div id="div-start">
+		</div>
+		<div class="article-handler">
+			<div class="single-article">
+				<div class="article-left article-text-part">
+					<h3>Intranet Banana Moon</h3>
+					<hr>
+					<p>Réalisation de l'intranet de l'entreprise Banana Moon</p>
+				</div>
+				<div class="article-right">
+					<img class="img-preview" src="assets/img/intra_bananamoon.png" alt="intranet banana moon">
+				</div>
+			</div>
+			<div class="single-article">
+				<div class="article-left article-text-part">
+						<a href="#"><h3>Intranet Banana Moon</h3></a>
+					<hr>
+					<p>Réalisation de l'intranet de l'entreprise Banana Moon</p>
+				</div>
+				<div class="article-right">
+					<img class="img-preview" src="assets/img/intra_bananamoon.png" alt="intranet banana moon">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
 
-    </div>
-    <div class="footer">
-
-    </div>
-    <!-- temp to make space at the end -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <script>
+		</div>
+		<!-- temp to make space at the end -->
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+	<script src="lib/luxy.js"></script>
+	<script>
         function start_transition() {
             document.getElementById("div-start").scrollIntoView({behavior: "smooth", inline: "nearest"});
         }
+		
+		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+		// set luxy start after the intro
+		if (!isMobile) {
+			luxy.init({
+				wrapper: '#luxy',
+				wrapperSpeed:  0.1
+			});
+		}
+		
+		/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("top-bar-text-handler").style.top = "0";
+			} else {
+				if(window.pageYOffset > 700) {
+					document.getElementById("top-bar-text-handler").style.top = "-65px";
+				}
+			}
+			prevScrollpos = currentScrollPos;
+		}
     </script>
 </body>
 </html>
