@@ -6,7 +6,7 @@
 # thewebfreelance
 A site used to present my web skills.
 
-Please note that thewebfreelance is a temp name and it will change in the future. 
+Please note that "thewebfreelance" is a temp name and it will change in the future. 
 
-### base sketch (very very sketchy) :
-![base sketch](https://cdn.discordapp.com/attachments/580479146577231872/595987335116750878/unknown.png)
+### index preview :
+![base sketch](assets/img/preview_0.5.png)

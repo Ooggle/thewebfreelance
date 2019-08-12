@@ -152,6 +152,28 @@ a{
     animation: screen-modulable-header 4s ease 1s infinite;
 }
 
+@media screen and (max-width: 1600px){
+    .modulable-part{
+        flex-direction: column-reverse;
+        height: inherit;
+    }
+
+    .modulable-part-left,
+    .modulable-part-right{
+        width: 98%;
+        margin: 50px 10px;
+    }
+
+    .modulable-part-right-title{
+        text-align: center;
+    }
+
+    .modulable-part-right-subtitle{
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
 @keyframes screen-modulable-header{
     0%{
 
@@ -322,6 +344,28 @@ a{
     color: rgb(248, 248, 248);
     font-size: 30px;
     text-align: right;
+}
+
+@media screen and (max-width: 1600px){
+    .responsive-part{
+        flex-direction: column;
+        height: inherit;
+    }
+
+    .responsive-part-left,
+    .responsive-part-right{
+        width: 98%;
+        margin: 50px 10px;
+    }
+
+    .responsive-part-left-title{
+        text-align: center;
+    }
+
+    .responsive-part-left-subtitle{
+        margin: 20px 0;
+        text-align: center;
+    }
 }
 
 @keyframes screen-responsive{
