@@ -9,7 +9,20 @@
         margin: 0;
     }
 
+    .full-header-handler h1{
+
+        font-size: 3em;
+    }
+
+    .top-bar-text-handler{
+        background-image: linear-gradient(to right bottom, rgb(197, 255, 143, 0.2), rgb(182, 238, 130, 0.2));
+    }
+
     /* MODULABLE PART */
+
+    .modulable-part-right-title{
+        font-size: 3em;
+    }
 
     .screen-modulable{
         width: 350px;
@@ -153,6 +166,10 @@
 
     /* RESPONSIVE PART */
 
+    .responsive-part-left-title{
+        font-size: 3em;
+    }
+
     .screen-responsive{
         width: 350px;
         height: 225px;
@@ -187,7 +204,7 @@
         width: 300px;
         height: 25px;
         margin-top: 5px;
-        margin-left: 25;
+        margin-left: 25px;
         border-radius: 2.5px;
         background-color: #fbdede;
         animation: screen-responsive-header 4s ease 1s infinite;
