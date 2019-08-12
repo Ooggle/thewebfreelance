@@ -1,0 +1,365 @@
+/* LANDING */
+
+@media screen and (max-width: 775px){
+
+    /* TOP BAR */
+
+    .top-bar-text{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* MODULABLE PART */
+
+    .screen-modulable{
+        width: 350px;
+        height: 225px;
+    }
+
+    .screen-modulable-header{
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 340px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(144, 192, 68);
+        animation: screen-modulable-header 4s ease 1s infinite;
+    }
+
+
+    @keyframes screen-modulable-header{
+        0%{
+
+        }
+        10%{
+            width: 225px;
+            margin-left: 57.5px;
+        }
+        40%{
+            width: 225px;
+            margin-left: 57.5px;
+        }
+        50%{
+            width: 165px;
+            margin-left: 42.5px;
+        }
+        70%{
+            width: 165px;
+            margin-left: 42.5px;
+        }
+        80%{
+            margin-left: 5px;
+            width: 240px;
+        }
+        86%{
+            margin-left: 5px;
+            width: 340px;
+        }
+    }
+
+    .screen-modulable-main{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 5px;
+        width: 240px;
+        height: 170px;
+        border-radius: 2.5px;
+        background-color: #DCEDC1;
+        animation: screen-modulable-main 4s ease 1s infinite;
+    }
+
+    @keyframes screen-modulable-main{
+        0%{
+
+        }
+        10%{
+            width: 160px;
+            margin-left: 57.5px;
+        }
+        40%{
+            width: 160px;
+            margin-left: 57.5px;
+        }
+        50%{
+            width: 165px;
+            margin-left: 42.5px;
+        }
+        70%{
+            width: 165px;
+            margin-left: 42.5px;
+        }
+        80%{
+            margin-left: 5px;
+            width: 240px;
+        }
+    }
+
+    .screen-modulable-nav{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 250px;
+        width: 95px;
+        height: 170px;
+        border-radius: 2.5px;
+        background-color: #FFD3B6;
+        animation: screen-modulable-nav 4s ease 1s infinite;
+    }
+
+    @keyframes screen-modulable-nav{
+        0%{
+
+        }
+        10%{
+            width: 60px;
+            height: 170px;
+            margin-left: 222.5px;
+            margin-top: 50px;
+        }
+        40%{
+            width: 60px;
+            height: 170px;
+            margin-left: 222.5px;
+            margin-top: 50px;
+        }
+        50%{
+            width: 100px;
+            height: 170px;
+            margin-left: 212.5px;
+            margin-top: 50px;
+        }
+        60%{
+            width: 100px;
+            height: 215px;
+            margin-left: 212.5px;
+            margin-top: 5px;
+        }
+        70%{
+            width: 100px;
+            height: 215px;
+            margin-left: 212.5px;
+            margin-top: 5px;
+        }
+        80%{
+            margin-left: 250px;
+            margin-top: 50px;
+            height: 170px;
+            width: 95px;
+        }
+    }
+
+    /* ----------------- */
+
+
+    /* RESPONSIVE PART */
+
+    .screen-responsive{
+        width: 350px;
+        height: 225px;
+        border-radius: 5px;
+        background-color: #FFF;
+        animation: screen-responsive 4s ease 1s infinite;
+    }
+
+    @keyframes screen-responsive{
+        10%{
+            width: 350px;
+        }
+        20%{
+            width: 250px;
+        }
+        40%{
+            width: 250px;
+        }
+        50%{
+            width: 150px;
+        }
+        80%{
+            width: 150px;
+        }
+        90%{
+            width: 350px;
+        }
+    }
+
+    .screen-responsive-header{
+        position: absolute;
+        width: 300px;
+        height: 25px;
+        margin-top: 5px;
+        margin-left: 25;
+        border-radius: 2.5px;
+        background-color: #fbdede;
+        animation: screen-responsive-header 4s ease 1s infinite;
+    }
+
+    @keyframes screen-responsive-header{
+        10%{
+            width: 300px;
+            margin-left: 25px;
+            margin-top: 5px;
+            border-radius: 2.5px;
+        }
+        20%{
+            width: 225px;
+            margin-left: 12.5px;         
+            margin-top: 5px;
+            border-radius: 2.5px;
+        }
+        40%{
+            width: 225px;
+            margin-left: 12.5px;         
+            margin-top: 5px;
+            border-radius: 2.5px;
+        }
+        50%{
+            width: 150px;
+            margin-left: 0px;    
+            margin-top: 0px;
+            border-radius: 2.5px 2.5px 0 0;
+        }
+        80%{
+            width: 150px;
+            margin-left: 0px;    
+            margin-top: 0px;
+            border-radius: 2.5px 2.5px 0 0;
+        }
+        90%{
+            width: 300px;
+            margin-left: 25px;
+            margin-top: 5px;
+            border-radius: 2.5px;
+        }
+    }
+
+    .screen-responsive-main{
+        position: absolute;
+        width: 200px;
+        height: 185px;
+        margin-top: 35px;
+        margin-left: 25px;
+        border-radius: 2.5px;
+        background-color: #FFD3B6;
+        animation: screen-responsive-main 4s ease 1s infinite;
+    }
+
+    @keyframes screen-responsive-main{
+        5%{
+            width: 200px;
+            height: 185px;
+            margin-top: 35px;
+            margin-left: 25px;
+        }
+        10%{
+            width: 200px;
+            height: 150px;
+            margin-top: 70px;
+            margin-left: 25px;
+        }
+        20%{
+            width: 225px;
+            height: 150px;
+            margin-top: 70px;
+            margin-left: 12.5px;
+        }
+        40%{
+            width: 225px;
+            height: 150px;
+            margin-top: 70px;
+            margin-left: 12.5px;
+        }
+        50%{
+            width: 140px;
+            height: 190px;
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+        80%{
+            width: 140px;
+            height: 190px;
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+        90%{
+            width: 200px;
+            height: 185px;
+            margin-top: 35px;
+            margin-left: 25px;
+        }
+    }
+
+    .screen-responsive-nav{
+        position: absolute;
+        width: 95px;
+        height: 185px;
+        margin-top: 35px;
+        margin-left: 230px;
+        border-radius: 2.5px;
+        background-color: #A8E6CF;
+        animation: screen-responsive-nav 4s ease 1s infinite;
+    }
+
+    @keyframes screen-responsive-nav{
+        5%{
+            width: 95px;
+            height: 185px;
+            margin-top: 35px;
+            margin-left: 230px;
+        }
+        10%{
+            width: 95px;
+            height: 30px;
+            margin-top: 35px;
+            margin-left: 230px;
+        }
+        20%{
+            width: 225px;
+            height: 30px;
+            margin-top: 35px;
+            margin-left: 12.5px;
+        }
+        40%{
+            width: 225px;
+            height: 30px;
+            margin-top: 35px;
+            margin-left: 12.5px;
+        }
+        50%{
+            width: 140px;
+            height: 0;
+            margin-top: 27.5px;
+            margin-left: 5px;
+        }
+        80%{
+            width: 140px;
+            height: 0;
+            margin-top: 2.5px;
+            margin-left: 4px;
+        }
+        81%{
+            width: 0px;
+            height: 0px;
+            margin-top: 35px;
+            margin-left: 230px;
+        }
+        82%{
+            width: 0px;
+            height: 185px;
+            margin-top: 35px;
+            margin-left: 230px;
+        }
+        90%{
+            width: 95px;
+            height: 185px;
+            margin-top: 35px;
+            margin-left: 230px;
+        }
+    }
+}
+
+
+
+
+
+
+

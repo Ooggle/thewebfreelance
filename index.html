@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="lib/icomoon/icomoon.css">
 </head>
@@ -81,10 +82,14 @@
 		window.onscroll = function() {
 			var currentScrollPos = window.pageYOffset;
 			if (prevScrollpos > currentScrollPos) {
-				document.getElementById("top-bar-text-handler").style.top = "0";
+				if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > 770) {
+					document.getElementById("top-bar-text-handler").style.top = "0";
+				}
 			} else {
 				if(window.pageYOffset > 690) {
+					if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > 770) {
 					document.getElementById("top-bar-text-handler").style.top = "-65px";
+					}
 				}
 			}
 			prevScrollpos = currentScrollPos;
