@@ -21,6 +21,7 @@ a{
 .full-header-handler{
     width: 100%;
     background-color: #c5ff8f;
+    background-image: linear-gradient(to right bottom, #c5ff8f, #b6ee82);
 }
 
 .full-header-handler h1{
@@ -40,7 +41,8 @@ a{
     top: 0;
 	z-index: 9999;
 	width: 100%;
-	background-color: rgb(189, 247, 135, 0.9);
+    background-color: rgb(189, 247, 135, 0.9);
+    background-image: linear-gradient(to right bottom, rgb(197, 255, 143, 0.9), rgb(182, 238, 130, 0.9));
 	transition: top 0.5s;
 }
 
@@ -277,6 +279,7 @@ a{
 .responsive-part{
     height: 1000px;
     background-color: #f38eff;
+    background-image: linear-gradient(to right bottom, #f38eff, #f394fe, #f399fd, #f29ffc, #f2a4fb);
     display: flex;
     justify-content: space-between;
 }
