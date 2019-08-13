@@ -572,6 +572,12 @@ a{
     text-align: center;
 }
 
+@media screen and (max-width: 775px){
+    .text-mail{
+        width: 95%;
+    }
+}
+
 .text-mail a{
     color: coral;
 }

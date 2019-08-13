@@ -93,3 +93,32 @@ a{
 
     }
 }
+
+.intra_pres_div{
+    width: 60%;
+    margin: 50px auto;
+}
+
+.intra_pres_div p{
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+.techo-used{
+    letter-spacing: 3px;
+    color: #ff7c80;
+    line-height: 160%;
+}
+
+.intra_pres_div img{
+    display: block;
+    width: 90%;
+    margin: 0 auto 50px auto;
+    box-shadow: 8px 8px 8px -4px rgba(199,199,199,1), -1px -1px 8px -4px rgba(199,199,199,1);
+}
+
+@media screen and (max-width: 775px){
+    .intra_pres_div{
+        width: 95%;
+    }
+}
