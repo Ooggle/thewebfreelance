@@ -1,10 +1,10 @@
-/* PORTFOLIO */
+/* INTRANET BANANA MOON */
 
 @media screen and (max-width: 775px){
 
     /* TOP BAR */
 
-    .portfolio-title{
+    .intranet-title{
         font-size: 2em;
     }
 
@@ -19,7 +19,8 @@
     }
 
     .top-bar-text-handler{
-        background-image: rgb(255, 226, 64, 0.2);
+        background-color: #ff9a9d;
+        background-image: linear-gradient(45deg, #FDB5B1 0%, #FDB5B1 100%);
     }
 
 

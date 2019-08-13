@@ -158,3 +158,17 @@ a{
     border-radius: 5px;
     box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
 }
+
+
+/* LIGHT ON */
+
+.light-on-div{
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.light-on{
+    width: 100px;
+}

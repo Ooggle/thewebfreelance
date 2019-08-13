@@ -160,8 +160,8 @@ a{
 
     .modulable-part-left,
     .modulable-part-right{
-        width: 98%;
-        margin: 50px 10px;
+        width: 100%;
+        margin: 50px 0;
     }
 
     .modulable-part-right-title{
@@ -354,8 +354,8 @@ a{
 
     .responsive-part-left,
     .responsive-part-right{
-        width: 98%;
-        margin: 50px 10px;
+        width: 100%;
+        margin: 50px 0;
     }
 
     .responsive-part-left-title{

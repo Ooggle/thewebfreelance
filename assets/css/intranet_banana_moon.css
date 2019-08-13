@@ -20,9 +20,7 @@ a{
 
 .full-header-handler{
     width: 100%;
-    background: #76b852;
-    background: -webkit-linear-gradient(to right, #8DC26F, #76b852);
-    background: linear-gradient(to right, #8DC26F, #76b852);
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
 }
 
 .top-bar-text-handler{
@@ -30,21 +28,19 @@ a{
     top: 0;
 	z-index: 9999;
 	width: 100%;
-    background: #76b852;
-    background: -webkit-linear-gradient(to right, #8DC26F, #76b852);
-    background: linear-gradient(to right, #8DC26F, #76b852);
+    background-image: linear-gradient(45deg, #ffa2a5 0%, #fad0c4 99%, #fad0c4 100%);
 	transition: top 0.5s;
 }
 
-.nyfitia-title{
-    color: #a5dd85;
+.intranet-title{
+    color: #ff8e91;
     letter-spacing: 0.4rem;
     font-size: 90px;
-    text-shadow: 3px 3px 0px #76b852;
+    text-shadow: 3px 3px 0px #ff7c80;
 }
 
 .full-header-handler h1{
-    color: #aaec83;
+    color: #ff8e91;
     text-align: center;
     font-size: 45px;
     padding-top: 230px;
@@ -75,7 +71,7 @@ a{
 }
 
 .icon-arrow{
-    color: #9fd381;
+    color: #ff8e91;
     font-size: 30px;
     text-align: center;
     padding-bottom: 10px;
