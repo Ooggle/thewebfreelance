@@ -172,3 +172,45 @@ a{
 .light-on{
     width: 100px;
 }
+
+
+.footer{
+    text-align: center;
+    position: relative;
+    padding: 20px 20px 50px 20px;
+    background-color: #fff8cd;
+}
+
+.wave-footer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px){
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-column{
+    padding: 15px 20px 25px 20px;
+    width: 250px;
+}
+
+.footer-column a{
+    color: rgb(216, 73, 21);
+}
+
+.end-text-brand{
+    text-align: center;
+    margin: 35px 2px 15px 2px;
+}
