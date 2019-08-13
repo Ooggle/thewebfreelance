@@ -6,7 +6,11 @@
 # thewebfreelance
 A site used to present my web skills.
 
-Please note that "thewebfreelance" is a temp name and it will change in the future. 
+Please note that "thewebfreelance" is a temp name and it will change in the future.
+
+### to do
+- add footer
+- more simple header on mobile ?
 
 ### index preview :
 ![base sketch](assets/img/preview_0.5.png)
