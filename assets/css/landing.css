@@ -562,3 +562,16 @@ a{
         margin-left: 460px;
     }
 }
+
+/* CONTACT */
+
+.text-mail{
+    font-size: 25px;
+    width: 50%;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.text-mail a{
+    color: coral;
+}
