@@ -1,3 +1,5 @@
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
+
 [![img release](https://img.shields.io/github/commit-activity/m/Ooggle/thewebfreelance.svg?sanitize=true&color=blue)](#)
 [![img last commit](https://img.shields.io/github/last-commit/Ooggle/thewebfreelance.svg)](#)
 [![img last release](https://img.shields.io/github/release/Ooggle/thewebfreelance.svg?color=red)](#)
