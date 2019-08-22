@@ -11,7 +11,6 @@ A site used to present my web skills.
 Please note that "thewebfreelance" is a temp name and it will change in the future.
 
 ### to do
-- add footer
 - more simple header on mobile ?
 
 ### index preview :
