@@ -41,8 +41,8 @@ a{
     top: 0;
 	z-index: 9999;
 	width: 100%;
-    background-color: rgb(189, 247, 135, 0.9);
-    background-image: linear-gradient(to right bottom, rgb(197, 255, 143, 0.9), rgb(182, 238, 130, 0.9));
+    background-color: rgba(189, 247, 135, 0.9);
+    background-image: linear-gradient(to right bottom, rgba(197, 255, 143, 0.9), rgba(182, 238, 130, 0.9));
 	transition: top 0.5s;
 }
 
